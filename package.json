@@ -1,5 +1,5 @@
 {
-  "proxy": "https://dry-earth-68402.herokuapp.com",
+  "proxy": "https://dry-earth-68402.herokuapp.com/register",
   "name": "facerecognitionbrain",
   "version": "0.1.0",
   "private": true,
