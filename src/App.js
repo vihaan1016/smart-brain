@@ -76,7 +76,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://github.com/vihaan1016/smart-brain-api.git/imageurl', {
+      fetch('https://git.heroku.com/dry-earth-68402.git/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -86,7 +86,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('https://github.com/vihaan1016/smart-brain-api.git/image', {
+          fetch('https://git.heroku.com/dry-earth-68402.git/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
