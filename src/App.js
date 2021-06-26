@@ -76,7 +76,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://whispering-badlands-23445.herokuapp.com/imageurl', {
+      fetch('https://github.com/vihaan1016/smart-brain-api.git/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
