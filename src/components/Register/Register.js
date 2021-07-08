@@ -26,7 +26,10 @@ class Register extends React.Component {
     fetch('https://dry-earth-68402.herokuapp.com/register', {
       mode: 'no-cors',
       method: 'post',
-      headers: {'Content-Type': 'application/json'},
+      headers: {headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }},
       body: JSON.stringify({
         email: this.state.email,
         password: this.state.password,
